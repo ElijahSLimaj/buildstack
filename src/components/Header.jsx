@@ -25,11 +25,19 @@ const Header = () => {
         isScrolled ? 'bg-white shadow-md' : 'bg-white/95 backdrop-blur-sm'
       }`}
     >
+      {/* Skip to main content link for accessibility */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary-blue focus:text-white focus:font-semibold focus:rounded"
+      >
+        Skip to main content
+      </a>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a href="/" className="flex items-center space-x-3" aria-label="BuildStack Home">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <title>BuildStack Logo</title>
               <rect x="8" y="28" width="24" height="3" fill="#0066FF" opacity="0.4"/>
               <rect x="6" y="22" width="28" height="3" fill="#0066FF" opacity="0.6"/>
               <rect x="4" y="16" width="32" height="3" fill="#0066FF" opacity="0.8"/>
@@ -40,10 +48,10 @@ const Header = () => {
               <span className="font-mono text-xl font-semibold text-primary-blue tracking-tight">BUILD</span>
               <span className="font-mono text-xl font-semibold text-deep-navy tracking-tight">STACK</span>
             </div>
-          </div>
+          </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-8" aria-label="Main navigation">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -87,7 +95,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden pb-4 animate-fadeIn">
+          <nav className="md:hidden pb-4 animate-fadeIn" aria-label="Mobile navigation">
             <div className="flex flex-col space-y-3">
               {navLinks.map((link) => (
                 <a
@@ -107,7 +115,7 @@ const Header = () => {
                 Start Your Project
               </a>
             </div>
-          </div>
+          </nav>
         )}
       </div>
     </header>

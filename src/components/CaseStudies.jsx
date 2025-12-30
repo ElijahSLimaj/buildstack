@@ -56,13 +56,17 @@ const CaseStudies = () => {
         {/* Case Studies Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {caseStudies.map((study, index) => (
-            <a
-              href={study.link}
-              target="_blank"
-              rel="noopener noreferrer"
+            <article
               key={index}
-              className="group bg-white border border-slate/10 overflow-hidden transition-all duration-300 hover:border-primary-blue hover:-translate-y-2 hover:shadow-xl hover:shadow-primary-blue/10 cursor-pointer block"
+              className="group bg-white border border-slate/10 overflow-hidden transition-all duration-300 hover:border-primary-blue hover:-translate-y-2 hover:shadow-xl hover:shadow-primary-blue/10"
             >
+              <a
+                href={study.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+                aria-label={`View case study: ${study.title}`}
+              >
               {/* Header */}
               <div className="p-6 bg-gradient-to-br from-ice-blue to-white border-b border-slate/10">
                 <div className="inline-block px-3 py-1 bg-primary-blue/10 text-primary-blue text-xs font-mono font-semibold mb-3">
@@ -101,7 +105,8 @@ const CaseStudies = () => {
                   ))}
                 </div>
               </div>
-            </a>
+              </a>
+            </article>
           ))}
         </div>
 

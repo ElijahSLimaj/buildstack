@@ -60,8 +60,9 @@ const Footer = () => {
         <div className="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-3 mb-4">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="/" className="flex items-center space-x-3 mb-4" aria-label="BuildStack Home">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <title>BuildStack Logo</title>
                 <rect x="8" y="28" width="24" height="3" fill="#0066FF" opacity="0.4"/>
                 <rect x="6" y="22" width="28" height="3" fill="#0066FF" opacity="0.6"/>
                 <rect x="4" y="16" width="32" height="3" fill="#0066FF" opacity="0.8"/>
@@ -72,7 +73,7 @@ const Footer = () => {
                 <span className="font-mono text-xl font-semibold text-primary-blue tracking-tight">BUILD</span>
                 <span className="font-mono text-xl font-semibold text-white tracking-tight">STACK</span>
               </div>
-            </div>
+            </a>
             <p className="text-steel text-sm leading-relaxed mb-6 max-w-sm">
               Enterprise SaaS development agency building production-grade software for startups and established businesses.
             </p>

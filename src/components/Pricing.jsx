@@ -72,7 +72,7 @@ const Pricing = () => {
         {/* Pricing Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {pricingTiers.map((tier, index) => (
-            <div
+            <article
               key={index}
               className={`relative bg-white border-2 p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary-blue/10 ${
                 tier.popular
@@ -163,7 +163,7 @@ const Pricing = () => {
                   No long-term contracts required
                 </p>
               )}
-            </div>
+            </article>
           ))}
         </div>
 

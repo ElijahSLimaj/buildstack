@@ -1,4 +1,5 @@
 import React from 'react'
+import SEO from './components/SEO'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import TechStack from './components/TechStack'
@@ -10,16 +11,21 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="min-h-screen">
-      <Header />
-      <Hero />
-      <TechStack />
-      <Services />
-      <CaseStudies />
-      <Pricing />
-      <FinalCTA />
-      <Footer />
-    </div>
+    <>
+      <SEO />
+      <div className="min-h-screen">
+        <Header />
+        <main id="main-content">
+          <Hero />
+          <TechStack />
+          <Services />
+          <CaseStudies />
+          <Pricing />
+          <FinalCTA />
+        </main>
+        <Footer />
+      </div>
+    </>
   )
 }
 

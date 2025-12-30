@@ -34,10 +34,11 @@ const Hero = () => {
             <a
               href="#pricing"
               className="group px-8 py-4 bg-primary-blue text-white font-semibold text-lg transition-all duration-300 hover:bg-blue-700 hover:shadow-xl hover:shadow-primary-blue/30 hover:-translate-y-1"
+              aria-label="View pricing plans"
             >
               <span className="flex items-center justify-center gap-2">
                 Start Your Project
-                <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </span>
@@ -45,6 +46,7 @@ const Hero = () => {
             <a
               href="#case-studies"
               className="px-8 py-4 bg-white text-primary-blue border-2 border-primary-blue font-semibold text-lg transition-all duration-300 hover:bg-primary-blue hover:text-white hover:shadow-xl hover:shadow-primary-blue/20 hover:-translate-y-1"
+              aria-label="View our case studies"
             >
               View Case Studies
             </a>
