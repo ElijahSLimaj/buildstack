@@ -51,7 +51,7 @@ const CaseStudies = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-syne font-bold text-deep-navy mb-4">
-            Real Projects. Real Impact.
+            Built to Scale, Designed to Last
           </h2>
           <p className="text-lg text-steel max-w-2xl mx-auto">
             12+ SaaS products generating over €8M in client revenue
