@@ -40,8 +40,8 @@ export default async function handler(req, res) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        from: 'BuildStack Contact Form <onboarding@resend.dev>', // Change to your verified domain
-        to: ['hello@buildstack.dev'], // Change to your email
+        from: 'BuildStack Contact Form <onboarding@resend.dev>', // Change to your verified domain once you have one
+        to: ['elijahlimaj@gmail.com'],
         reply_to: email,
         subject: `New Contact Form Submission from ${name}`,
         html: `
