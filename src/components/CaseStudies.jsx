@@ -1,47 +1,42 @@
 import React from 'react'
 
 const CaseStudies = () => {
-  // TODO: Replace these placeholder case studies with real client projects
-  // Update this array in src/components/CaseStudies.jsx with:
-  // - Real project names and descriptions
-  // - Actual metrics (revenue, users, uptime, etc.)
-  // - Client logos or project screenshots
-  // - Industry tags (fintech, healthtech, proptech, etc.)
-  // - Links to case study pages or live products
-
   const caseStudies = [
     {
-      title: 'FinTech Payment Platform',
-      industry: 'Fintech',
-      description: 'Enterprise payment processing platform handling €50M+ in annual transactions',
+      title: 'InspireFlow',
+      industry: 'MarTech',
+      description: 'AI-powered webinar platform for speakers & coaches. Host live webinars while AI sales agents close deals in real-time.',
       metrics: [
-        { label: 'Annual Revenue', value: '€3.2M' },
-        { label: 'Active Users', value: '45K+' },
-        { label: 'Uptime', value: '99.9%' }
+        { label: 'Revenue Processed', value: '$2.4M+' },
+        { label: 'Active Hosts', value: '250+' },
+        { label: 'Conversion Rate', value: '23%' }
       ],
-      tags: ['NestJS', 'React', 'AWS', 'PostgreSQL']
+      tags: ['React', 'Node.js', 'Stripe', 'OpenAI'],
+      link: 'https://inspire-flow-rouge.vercel.app/'
     },
     {
-      title: 'HealthTech Telemedicine App',
-      industry: 'HealthTech',
-      description: 'HIPAA-compliant telehealth platform connecting patients with specialists',
+      title: 'QuickBase AI',
+      industry: 'AI / SaaS',
+      description: 'Turn existing content into an AI support agent that answers customer questions instantly. Setup takes 5 minutes.',
       metrics: [
-        { label: 'Annual Revenue', value: '€2.1M' },
-        { label: 'Consultations', value: '120K+' },
-        { label: 'Response Time', value: '<50ms' }
+        { label: 'Companies', value: '500+' },
+        { label: 'Ticket Reduction', value: '80%' },
+        { label: 'Setup Time', value: '5 min' }
       ],
-      tags: ['Flutter', 'Golang', 'Kubernetes', 'MongoDB']
+      tags: ['Next.js', 'OpenAI', 'Stripe', 'PostgreSQL'],
+      link: 'https://quick-base-ai.vercel.app/'
     },
     {
-      title: 'PropTech Property Management',
-      industry: 'PropTech',
-      description: 'AI-powered property management system for commercial real estate portfolios',
+      title: 'VettedSports',
+      industry: 'Media / FinTech',
+      description: 'Premium digital publication covering the global sports asset class. Intelligence platform for investors and dealmakers.',
       metrics: [
-        { label: 'Annual Revenue', value: '€2.7M' },
-        { label: 'Properties', value: '8,500+' },
-        { label: 'Cost Savings', value: '35%' }
+        { label: 'Subscribers', value: '1000s' },
+        { label: 'Weekly Reach', value: '50K+' },
+        { label: 'Open Rate', value: '45%+' }
       ],
-      tags: ['Next.js', 'Spring Boot', 'AWS Lambda', 'Redis']
+      tags: ['React', 'Beehiiv', 'Analytics', 'CMS'],
+      link: 'https://www.vettedsports.com/'
     }
   ]
 
@@ -61,9 +56,12 @@ const CaseStudies = () => {
         {/* Case Studies Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {caseStudies.map((study, index) => (
-            <div
+            <a
+              href={study.link}
+              target="_blank"
+              rel="noopener noreferrer"
               key={index}
-              className="group bg-white border border-slate/10 overflow-hidden transition-all duration-300 hover:border-primary-blue hover:-translate-y-2 hover:shadow-xl hover:shadow-primary-blue/10"
+              className="group bg-white border border-slate/10 overflow-hidden transition-all duration-300 hover:border-primary-blue hover:-translate-y-2 hover:shadow-xl hover:shadow-primary-blue/10 cursor-pointer block"
             >
               {/* Header */}
               <div className="p-6 bg-gradient-to-br from-ice-blue to-white border-b border-slate/10">
@@ -103,7 +101,7 @@ const CaseStudies = () => {
                   ))}
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
 
