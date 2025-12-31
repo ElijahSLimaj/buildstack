@@ -15,16 +15,16 @@ const CaseStudies = () => {
       link: 'https://inspire-flow-rouge.vercel.app/'
     },
     {
-      title: 'QuickBase AI',
-      industry: 'AI / SaaS',
-      description: 'Turn existing content into an AI support agent that answers customer questions instantly. Setup takes 5 minutes.',
+      title: 'Dr. Adem',
+      industry: 'HealthTech',
+      description: 'Patient companion app for cancer therapy. Brings clarity and support throughout the treatment journey with personalized guidance.',
       metrics: [
-        { label: 'Companies', value: '500+' },
-        { label: 'Ticket Reduction', value: '80%' },
-        { label: 'Setup Time', value: '5 min' }
+        { label: 'Beta Users', value: '500+' },
+        { label: 'Satisfaction', value: '94%' },
+        { label: 'Daily Active', value: '78%' }
       ],
-      tags: ['Next.js', 'OpenAI', 'Stripe', 'PostgreSQL'],
-      link: 'https://quick-base-ai.vercel.app/'
+      tags: ['React Native', 'Node.js', 'AWS', 'HIPAA'],
+      link: 'https://dr-adem.com/'
     },
     {
       title: 'VettedSports',
@@ -49,7 +49,7 @@ const CaseStudies = () => {
             Built to Scale, Designed to Last
           </h2>
           <p className="text-lg text-steel max-w-2xl mx-auto">
-            12+ SaaS products generating over €8M in client revenue
+            12+ SaaS products generating over €8M revenue for clients
           </p>
         </div>
 

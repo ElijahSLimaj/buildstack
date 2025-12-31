@@ -3,7 +3,7 @@ import React from 'react'
 const Hero = () => {
   const stats = [
     { value: '12+', label: 'SaaS Products' },
-    { value: '€8M+', label: 'Revenue Generated' },
+    { value: '€8M+', label: 'Revenue for Clients' },
     { value: '98%', label: 'Uptime' },
   ]
 
