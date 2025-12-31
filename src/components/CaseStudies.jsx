@@ -15,16 +15,16 @@ const CaseStudies = () => {
       link: 'https://inspire-flow-rouge.vercel.app/'
     },
     {
-      title: 'Dr. Adem',
-      industry: 'HealthTech',
-      description: 'Patient companion app for cancer therapy. Brings clarity and support throughout the treatment journey with personalized guidance.',
+      title: 'QuickBase AI',
+      industry: 'AI / SaaS',
+      description: 'Turn existing content into an AI support agent that answers customer questions instantly. Setup takes 5 minutes.',
       metrics: [
-        { label: 'Beta Users', value: '500+' },
-        { label: 'Satisfaction', value: '94%' },
-        { label: 'Daily Active', value: '78%' }
+        { label: 'Companies', value: '500+' },
+        { label: 'Ticket Reduction', value: '80%' },
+        { label: 'Setup Time', value: '5 min' }
       ],
-      tags: ['React Native', 'Node.js', 'AWS', 'HIPAA'],
-      link: 'https://dr-adem.com/'
+      tags: ['Next.js', 'OpenAI', 'Stripe', 'PostgreSQL'],
+      link: 'https://quick-base-ai.vercel.app/'
     },
     {
       title: 'VettedSports',
