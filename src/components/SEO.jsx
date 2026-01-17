@@ -2,8 +2,8 @@ import React from 'react'
 import { Helmet } from 'react-helmet-async'
 
 const SEO = ({
-  title = "BuildStack — Revolutionizing How Startups Hire Senior Engineers | Ship in 72 Hours",
-  description = "Hiring senior engineers is broken. BuildStack fixed it. Get world-class engineers (5+ yrs) shipping code in 72 hours — 60% cheaper than US hires, 10x faster than recruiting. Cancel anytime.",
+  title = "BuildStack — Stop Bleeding $200K/Year on Engineers Who Quit | Ship Code in 72 Hours",
+  description = "Get a battle-tested senior engineer shipping production code in 72 hours. Save $144K+ per engineer vs. US hires. No 6-month recruiting. No Upwork disasters. Cancel anytime with zero penalty.",
   image = "https://buildstack-seven.vercel.app/og-image.jpg",
   url = "https://buildstack-seven.vercel.app/",
   type = "website"
@@ -22,7 +22,7 @@ const SEO = ({
           "width": 200,
           "height": 200
         },
-        "description": "BuildStack is revolutionizing how startups hire senior engineers. Get world-class engineering teams in 72 hours — no recruitment cycles, no equity, no Upwork. Cancel anytime.",
+        "description": "Stop bleeding $200K/year on engineers who quit. BuildStack gives you battle-tested senior engineers shipping production code in 72 hours. Save $144K+ per engineer. Cancel anytime.",
         "sameAs": [
           "https://github.com/buildstack",
           "https://linkedin.com/company/buildstack",
@@ -39,7 +39,7 @@ const SEO = ({
         "@id": "https://buildstack-seven.vercel.app/#website",
         "url": "https://buildstack-seven.vercel.app/",
         "name": "BuildStack",
-        "description": "Revolutionizing How Startups Hire Senior Engineers — Ship in 72 Hours, Cancel Anytime",
+        "description": "Stop Bleeding $200K/Year on Engineers Who Quit — Ship Code in 72 Hours, Cancel Anytime",
         "publisher": {
           "@id": "https://buildstack-seven.vercel.app/#organization"
         }
@@ -48,7 +48,7 @@ const SEO = ({
         "@type": "Service",
         "@id": "https://buildstack-seven.vercel.app/#service",
         "name": "Senior Engineer Retainer & Enterprise Teams",
-        "description": "BuildStack eliminates 6-month hiring cycles. Get dedicated senior engineers (5+ years experience) or entire engineering teams on flexible monthly retainer. First commit in 72 hours. 60% cheaper than US hires, 10x faster than recruiting. No contracts, cancel anytime.",
+        "description": "The 'No-Brainer' Engineering Offer: Get dedicated senior engineers (5+ years, vetted top 3%) or entire engineering teams. First commit in 72 hours. Save $144K+ per engineer per year. Zero risk — if they're not a fit in week one, you don't pay. Cancel anytime.",
         "provider": {
           "@id": "https://buildstack-seven.vercel.app/#organization"
         },
@@ -126,7 +126,7 @@ const SEO = ({
       <title>{title}</title>
       <meta name="title" content={title} />
       <meta name="description" content={description} />
-      <meta name="keywords" content="hire senior developer, senior engineer retainer, alternative to upwork, faster than recruiting, skip hiring cycle, contract software engineer, staff augmentation, dedicated developer, remote senior engineer, enterprise engineering team, build engineering team fast, outsourced CTO" />
+      <meta name="keywords" content="hire senior developer fast, senior engineer retainer, alternative to upwork, faster than recruiting, skip hiring cycle, stop wasting money on engineers, contract senior developer, staff augmentation, dedicated developer, remote senior engineer, enterprise engineering team, build engineering team fast, outsourced CTO, startup engineering team, save money hiring developers" />
       <link rel="canonical" href={url} />
 
       {/* Open Graph */}

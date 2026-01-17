@@ -5,38 +5,41 @@ const CaseStudies = () => {
     {
       title: 'InspireFlow',
       industry: 'MarTech',
-      description: 'AI-powered webinar platform for speakers & coaches. Host live webinars while AI sales agents close deals in real-time.',
+      description: 'Built an AI-powered webinar platform from scratch. Now processing $2.4M+ in revenue with 250+ active hosts.',
       metrics: [
         { label: 'Revenue Processed', value: '$2.4M+' },
         { label: 'Active Hosts', value: '250+' },
         { label: 'Conversion Rate', value: '23%' }
       ],
       tags: ['React', 'Node.js', 'Stripe', 'OpenAI'],
-      link: 'https://inspire-flow-rouge.vercel.app/'
+      link: 'https://inspire-flow-rouge.vercel.app/',
+      highlight: 'Built in 10 weeks'
     },
     {
       title: 'QuickBase AI',
       industry: 'AI / SaaS',
-      description: 'Turn existing content into an AI support agent that answers customer questions instantly. Setup takes 5 minutes.',
+      description: 'Created an AI support agent that reduced client support tickets by 80%. 500+ companies onboarded in 6 months.',
       metrics: [
         { label: 'Companies', value: '500+' },
         { label: 'Ticket Reduction', value: '80%' },
         { label: 'Setup Time', value: '5 min' }
       ],
       tags: ['Next.js', 'OpenAI', 'Stripe', 'PostgreSQL'],
-      link: 'https://quick-base-ai.vercel.app/'
+      link: 'https://quick-base-ai.vercel.app/',
+      highlight: '0 to 500 users in 6mo'
     },
     {
       title: 'VettedSports',
       industry: 'Media / FinTech',
-      description: 'Premium digital publication covering the global sports asset class. Intelligence platform for investors and dealmakers.',
+      description: 'Launched a premium sports investment publication. 45%+ open rates (3x industry average). 50K+ weekly reach.',
       metrics: [
         { label: 'Subscribers', value: '1000s' },
         { label: 'Weekly Reach', value: '50K+' },
         { label: 'Open Rate', value: '45%+' }
       ],
       tags: ['React', 'Beehiiv', 'Analytics', 'CMS'],
-      link: 'https://www.vettedsports.com/'
+      link: 'https://www.vettedsports.com/',
+      highlight: '3x industry open rates'
     }
   ]
 
@@ -46,10 +49,11 @@ const CaseStudies = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-syne font-bold text-deep-navy mb-4">
-            Built to Scale, Designed to Last
+            Real Products. Real Revenue. Real Fast.
           </h2>
           <p className="text-lg text-steel max-w-2xl mx-auto">
-            12+ SaaS products generating over €8M revenue for clients
+            We've helped 50+ startups ship products that actually make money. <br />
+            <strong className="text-deep-navy">$8M+ in client revenue generated. Here's the proof.</strong>
           </p>
         </div>
 
@@ -69,8 +73,15 @@ const CaseStudies = () => {
               >
               {/* Header */}
               <div className="p-6 bg-gradient-to-br from-ice-blue to-white border-b border-slate/10">
-                <div className="inline-block px-3 py-1 bg-primary-blue/10 text-primary-blue text-xs font-mono font-semibold mb-3">
-                  {study.industry}
+                <div className="flex items-center justify-between mb-3">
+                  <div className="inline-block px-3 py-1 bg-primary-blue/10 text-primary-blue text-xs font-mono font-semibold">
+                    {study.industry}
+                  </div>
+                  {study.highlight && (
+                    <div className="inline-block px-2 py-1 bg-success-green/10 text-success-green text-xs font-semibold">
+                      {study.highlight}
+                    </div>
+                  )}
                 </div>
                 <h3 className="text-xl font-syne font-bold text-deep-navy mb-2">
                   {study.title}
@@ -112,12 +123,18 @@ const CaseStudies = () => {
 
         {/* CTA */}
         <div className="text-center mt-12">
+          <p className="text-steel mb-6">
+            Want results like these? Let's talk about your project.
+          </p>
           <a
             href="#contact"
             className="inline-block px-8 py-4 bg-primary-blue text-white font-semibold transition-all duration-300 hover:bg-blue-700 hover:shadow-xl hover:shadow-primary-blue/30 hover:-translate-y-1"
           >
-            Discuss Your Project
+            Book Your Free Strategy Call
           </a>
+          <p className="text-sm text-steel mt-4">
+            No commitment. We'll map out exactly how to build your product.
+          </p>
         </div>
       </div>
     </section>

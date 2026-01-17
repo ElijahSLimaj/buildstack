@@ -159,52 +159,56 @@ const FinalCTA = () => {
           {/* Left Column - CTA Content */}
           <div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-syne font-bold mb-6">
-              Ready to Build Your{' '}
-              <span className="text-primary-blue">SaaS Product?</span>
+              Your Competitors Are Shipping.{' '}
+              <span className="text-primary-blue">Are You?</span>
             </h2>
-            <p className="text-lg text-steel mb-8 leading-relaxed">
-              Let's discuss your project. We'll analyze your requirements, provide technical recommendations, and create a roadmap to launch.
+            <p className="text-lg text-steel mb-4 leading-relaxed">
+              Every week you spend recruiting is a week your competitors are building.
+              Every Upwork disaster is another month lost.
+            </p>
+            <p className="text-lg text-white mb-8 leading-relaxed font-semibold">
+              Book a free 30-minute strategy call. We'll map out exactly how to ship your product — even if you don't work with us.
             </p>
 
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-primary-blue/10 flex items-center justify-center flex-shrink-0">
-                  <svg className="w-6 h-6 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                <div className="w-12 h-12 bg-success-green/10 flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-success-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-syne font-bold text-white mb-1">Email Us</h3>
-                  <a href="mailto:hello@buildstack.dev" className="text-steel hover:text-primary-blue transition-colors">
-                    hello@buildstack.dev
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-primary-blue/10 flex items-center justify-center flex-shrink-0">
-                  <svg className="w-6 h-6 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="font-syne font-bold text-white mb-1">Schedule a Call</h3>
+                  <h3 className="font-syne font-bold text-white mb-1">72-Hour First Commit</h3>
                   <p className="text-steel">
-                    Free 30-minute consultation
+                    Your engineer ships production code within 3 days
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-primary-blue/10 flex items-center justify-center flex-shrink-0">
-                  <svg className="w-6 h-6 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <div className="w-12 h-12 bg-success-green/10 flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-success-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-syne font-bold text-white mb-1">Response Time</h3>
+                  <h3 className="font-syne font-bold text-white mb-1">Zero Risk Guarantee</h3>
                   <p className="text-steel">
-                    Within 24 hours on business days
+                    Not satisfied in week one? You don't pay
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-success-green/10 flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-success-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="font-syne font-bold text-white mb-1">Cancel Anytime</h3>
+                  <p className="text-steel">
+                    Month-to-month. No contracts. No BS.
                   </p>
                 </div>
               </div>
@@ -218,7 +222,8 @@ const FinalCTA = () => {
             <ErrorMessage />
           ) : (
             <div className="bg-slate/50 p-8 border border-primary-blue/20">
-              <h3 className="text-2xl font-syne font-bold mb-6">Send us a message</h3>
+              <h3 className="text-2xl font-syne font-bold mb-2">Get Your Free Strategy Call</h3>
+              <p className="text-steel text-sm mb-6">We respond within 24 hours. Usually faster.</p>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium mb-2">
@@ -301,9 +306,12 @@ const FinalCTA = () => {
                       <span>Sending...</span>
                     </>
                   ) : (
-                    'Send Message'
+                    'Book My Free Strategy Call'
                   )}
                 </button>
+                <p className="text-center text-xs text-steel">
+                  No spam. No sales pitch. Just a real conversation about your product.
+                </p>
               </form>
             </div>
           )}

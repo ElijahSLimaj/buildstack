@@ -75,7 +75,7 @@ const Footer = () => {
               </div>
             </a>
             <p className="text-steel text-sm leading-relaxed mb-6 max-w-sm">
-              Senior engineers on retainer. Skip the Upwork chaos and hiring overhead — get senior talent embedded in your team, starting in 48 hours.
+              Stop bleeding money on engineers who quit. Get battle-tested senior talent shipping code in 72 hours — at 60% of US rates. Cancel anytime.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => (
@@ -115,10 +115,10 @@ const Footer = () => {
         <div className="py-6 border-t border-steel/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-steel text-sm">
-              © {currentYear} BuildStack. Senior engineers on demand.
+              © {currentYear} BuildStack. Trusted by 50+ funded startups.
             </p>
             <p className="text-steel text-sm font-mono">
-              No contracts. No overhead. Cancel anytime.
+              72-hour first commit. Zero risk. Cancel anytime.
             </p>
           </div>
         </div>
