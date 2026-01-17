@@ -4,34 +4,34 @@ const Services = () => {
   const services = [
     {
       title: 'MVP Development',
-      subtitle: 'Launch your product in 8-12 weeks',
+      subtitle: 'Idea → Revenue in 8-12 weeks',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
       ),
       features: [
-        'Full-stack development from scratch',
-        'Market validation & technical feasibility',
-        'Scalable architecture foundation',
-        'Production deployment on AWS',
-        'Post-launch support & monitoring'
+        'Full-stack development (no hand-off mess)',
+        'We validate before we build — save months',
+        'Architecture that scales to 100K users',
+        'Production-ready on AWS/Vercel/GCP',
+        '30 days post-launch support included'
       ]
     },
     {
       title: 'Scaling & Optimization',
-      subtitle: 'Refactor, optimize, and scale',
+      subtitle: 'Fix what's slowing you down',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
         </svg>
       ),
       features: [
-        'Legacy codebase refactoring',
-        'Microservices migration',
-        'Database optimization & indexing',
-        'Performance profiling & tuning',
-        'Load testing & capacity planning'
+        'Turn spaghetti code into clean architecture',
+        'Microservices that actually make sense',
+        '10x database performance (we've done it)',
+        'Find & fix bottlenecks in 48 hours',
+        'Prepare your stack for enterprise clients'
       ]
     },
     {
@@ -43,27 +43,27 @@ const Services = () => {
         </svg>
       ),
       features: [
-        'RESTful & GraphQL API development',
-        'Payment gateway integration (Stripe, etc.)',
-        'Third-party service connections',
-        'Webhook & event-driven systems',
-        'API documentation & versioning'
+        'REST, GraphQL, or whatever you need',
+        'Stripe, Plaid, Twilio — done right',
+        'Zapier-like automation for your product',
+        'Real-time webhooks that don't break',
+        'API docs your customers will love'
       ]
     },
     {
       title: 'Ongoing Maintenance',
-      subtitle: '24/7 monitoring and support',
+      subtitle: 'Sleep while we keep it running',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
         </svg>
       ),
       features: [
-        'Proactive monitoring & alerting',
-        'Security patches & updates',
-        'Bug fixes & hotfixes',
-        'Feature enhancements',
-        'Monthly performance reports'
+        '24/7 monitoring — we catch issues first',
+        'Security patches before they're exploited',
+        'Bug fixes shipped same-day',
+        'New features rolled in continuously',
+        'Monthly reports (you'll actually read)'
       ]
     }
   ]
@@ -74,10 +74,11 @@ const Services = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-syne font-bold text-deep-navy mb-4">
-            From MVP to Scale
+            We Don't Just Write Code. We Ship Products.
           </h2>
           <p className="text-lg text-steel max-w-2xl mx-auto">
-            We architect businesses, not just write code
+            12+ SaaS products launched. $8M+ revenue generated for clients. <br />
+            <strong className="text-deep-navy">Here's what your engineer can do for you.</strong>
           </p>
         </div>
 

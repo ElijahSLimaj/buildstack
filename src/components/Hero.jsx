@@ -2,9 +2,9 @@ import React from 'react'
 
 const Hero = () => {
   const stats = [
-    { value: '12+', label: 'SaaS Products' },
-    { value: '€8M+', label: 'Revenue for Clients' },
-    { value: '98%', label: 'Uptime' },
+    { value: '72hrs', label: 'To First Commit' },
+    { value: '$144K+', label: 'Saved Per Engineer/Year' },
+    { value: '0', label: 'Hiring Risk' },
   ]
 
   return (
@@ -14,19 +14,19 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 bg-white border border-primary-blue/20 mb-8 animate-fadeIn">
             <span className="text-sm font-mono font-semibold text-primary-blue tracking-wide">
-              ENTERPRISE SAAS DEVELOPMENT
+              TRUSTED BY 50+ FUNDED STARTUPS
             </span>
           </div>
 
           {/* Headline */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-syne font-extrabold text-deep-navy mb-6 leading-tight animate-slideUp">
-            We Build Production-Grade{' '}
-            <span className="text-primary-blue">SaaS Companies</span>
+            Stop Bleeding $200K/Year{' '}
+            <span className="text-primary-blue">On Engineers Who Quit.</span>
           </h1>
 
           {/* Subhead */}
           <p className="text-lg sm:text-xl lg:text-2xl text-steel leading-relaxed mb-10 max-w-3xl mx-auto animate-slideUp" style={{ animationDelay: '0.1s' }}>
-            From MVP to scale. Full-stack development, microservices architecture, and cloud infrastructure. We don't just ship code—we architect businesses.
+            Get a battle-tested senior engineer shipping production code in 72 hours. No 6-month hiring cycles. No equity negotiations. No Upwork disasters. <strong className="text-deep-navy">Cancel anytime with zero penalty.</strong>
           </p>
 
           {/* CTAs */}
@@ -37,18 +37,18 @@ const Hero = () => {
               aria-label="View pricing plans"
             >
               <span className="flex items-center justify-center gap-2">
-                Start Your Project
+                Get Your Engineer — From $4K/mo
                 <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </span>
             </a>
             <a
-              href="#case-studies"
+              href="#contact"
               className="px-8 py-4 bg-white text-primary-blue border-2 border-primary-blue font-semibold text-lg transition-all duration-300 hover:bg-primary-blue hover:text-white hover:shadow-xl hover:shadow-primary-blue/20 hover:-translate-y-1"
-              aria-label="View our case studies"
+              aria-label="Book a call"
             >
-              View Case Studies
+              Book a Free Strategy Call
             </a>
           </div>
 

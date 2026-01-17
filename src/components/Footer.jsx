@@ -4,17 +4,17 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   const footerLinks = {
-    Services: [
-      { name: 'MVP Development', href: '#services' },
-      { name: 'Scaling & Optimization', href: '#services' },
-      { name: 'Custom Integrations', href: '#services' },
-      { name: 'Ongoing Maintenance', href: '#services' }
+    Engagement: [
+      { name: 'Part-Time Retainer', href: '#pricing' },
+      { name: 'Full-Time Retainer', href: '#pricing' },
+      { name: 'Team Retainer', href: '#pricing' },
+      { name: 'How It Works', href: '#services' }
     ],
     Company: [
-      { name: 'About Us', href: '#' },
       { name: 'Case Studies', href: '#case-studies' },
       { name: 'Tech Stack', href: '#tech-stack' },
-      { name: 'Pricing', href: '#pricing' }
+      { name: 'Pricing', href: '#pricing' },
+      { name: 'Contact', href: '#contact' }
     ],
     Legal: [
       { name: 'Privacy Policy', href: '#' },
@@ -75,7 +75,7 @@ const Footer = () => {
               </div>
             </a>
             <p className="text-steel text-sm leading-relaxed mb-6 max-w-sm">
-              Enterprise SaaS development agency building production-grade software for startups and established businesses.
+              Senior engineers on retainer. Skip the Upwork chaos and hiring overhead — get senior talent embedded in your team, starting in 48 hours.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => (
@@ -115,10 +115,10 @@ const Footer = () => {
         <div className="py-6 border-t border-steel/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-steel text-sm">
-              © {currentYear} BuildStack. All rights reserved.
+              © {currentYear} BuildStack. Senior engineers on demand.
             </p>
             <p className="text-steel text-sm font-mono">
-              Built with React + TailwindCSS
+              No contracts. No overhead. Cancel anytime.
             </p>
           </div>
         </div>

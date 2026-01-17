@@ -1,9 +1,9 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async'
 
-const SEO = ({ 
-  title = "BuildStack - Enterprise SaaS Development | MVP to Scale",
-  description = "BuildStack builds production-grade SaaS companies from MVP to scale. Full-stack development, microservices architecture, and cloud infrastructure. 12+ SaaS products generating €8M+ in revenue.",
+const SEO = ({
+  title = "BuildStack — Revolutionizing How Startups Hire Senior Engineers | Ship in 72 Hours",
+  description = "Hiring senior engineers is broken. BuildStack fixed it. Get world-class engineers (5+ yrs) shipping code in 72 hours — 60% cheaper than US hires, 10x faster than recruiting. Cancel anytime.",
   image = "https://buildstack-seven.vercel.app/og-image.jpg",
   url = "https://buildstack-seven.vercel.app/",
   type = "website"
@@ -22,7 +22,7 @@ const SEO = ({
           "width": 200,
           "height": 200
         },
-        "description": "Enterprise SaaS development agency building production-grade software for startups and established businesses.",
+        "description": "BuildStack is revolutionizing how startups hire senior engineers. Get world-class engineering teams in 72 hours — no recruitment cycles, no equity, no Upwork. Cancel anytime.",
         "sameAs": [
           "https://github.com/buildstack",
           "https://linkedin.com/company/buildstack",
@@ -30,7 +30,7 @@ const SEO = ({
         ],
         "contactPoint": {
           "@type": "ContactPoint",
-          "contactType": "Customer Service",
+          "contactType": "Sales",
           "email": "contact@buildstack.com"
         }
       },
@@ -39,63 +39,67 @@ const SEO = ({
         "@id": "https://buildstack-seven.vercel.app/#website",
         "url": "https://buildstack-seven.vercel.app/",
         "name": "BuildStack",
-        "description": "Enterprise SaaS Development - From MVP to Scale",
+        "description": "Revolutionizing How Startups Hire Senior Engineers — Ship in 72 Hours, Cancel Anytime",
         "publisher": {
           "@id": "https://buildstack-seven.vercel.app/#organization"
-        },
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "https://buildstack-seven.vercel.app/?s={search_term_string}"
-          },
-          "query-input": "required name=search_term_string"
         }
       },
       {
         "@type": "Service",
         "@id": "https://buildstack-seven.vercel.app/#service",
-        "name": "Enterprise SaaS Development",
-        "description": "Full-stack SaaS development services including MVP development, scaling, optimization, custom integrations, and ongoing maintenance.",
+        "name": "Senior Engineer Retainer & Enterprise Teams",
+        "description": "BuildStack eliminates 6-month hiring cycles. Get dedicated senior engineers (5+ years experience) or entire engineering teams on flexible monthly retainer. First commit in 72 hours. 60% cheaper than US hires, 10x faster than recruiting. No contracts, cancel anytime.",
         "provider": {
-          "@id": "https://buildstack.com/#organization"
+          "@id": "https://buildstack-seven.vercel.app/#organization"
         },
-        "serviceType": "Software Development",
+        "serviceType": "Staff Augmentation",
         "areaServed": "Worldwide",
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
-          "name": "SaaS Development Services",
+          "name": "Engineer Retainer Plans",
           "itemListElement": [
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "MVP Development",
-                "description": "Launch your product in 8-12 weeks with full-stack development from scratch"
+                "name": "Half-Time Retainer",
+                "description": "One senior engineer (5+ yrs) working 20 hours/week on your product"
+              },
+              "price": "4000",
+              "priceCurrency": "USD",
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "4000",
+                "priceCurrency": "USD",
+                "unitText": "MONTH"
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Scaling & Optimization",
-                "description": "Refactor, optimize, and scale existing SaaS applications"
+                "name": "Full-Time Retainer",
+                "description": "One senior engineer (5+ yrs) working 40 hours/week, fully embedded in your team"
+              },
+              "price": "8000",
+              "priceCurrency": "USD",
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "8000",
+                "priceCurrency": "USD",
+                "unitText": "MONTH"
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Custom Integrations",
-                "description": "Connect your SaaS to payment gateways, third-party services, and APIs"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Ongoing Maintenance",
-                "description": "24/7 monitoring, security patches, and ongoing support"
+                "name": "Enterprise Teams",
+                "description": "Dedicated engineering teams (3+ engineers) with embedded tech leads. Build your entire engineering org in weeks, not years. Custom pricing."
+              },
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "priceCurrency": "USD"
               }
             }
           ]
@@ -122,6 +126,7 @@ const SEO = ({
       <title>{title}</title>
       <meta name="title" content={title} />
       <meta name="description" content={description} />
+      <meta name="keywords" content="hire senior developer, senior engineer retainer, alternative to upwork, faster than recruiting, skip hiring cycle, contract software engineer, staff augmentation, dedicated developer, remote senior engineer, enterprise engineering team, build engineering team fast, outsourced CTO" />
       <link rel="canonical" href={url} />
 
       {/* Open Graph */}
@@ -147,4 +152,3 @@ const SEO = ({
 }
 
 export default SEO
-
