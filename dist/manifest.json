@@ -1,0 +1,21 @@
+{
+  "name": "BuildStack - Enterprise SaaS Development",
+  "short_name": "BuildStack",
+  "description": "Enterprise SaaS development agency building production-grade software for startups and established businesses.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0066FF",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "developer", "productivity"],
+  "lang": "en-US"
+}
+

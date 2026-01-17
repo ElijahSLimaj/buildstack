@@ -20,7 +20,7 @@ const Services = () => {
     },
     {
       title: 'Scaling & Optimization',
-      subtitle: 'Fix what's slowing you down',
+      subtitle: "Fix what's slowing you down",
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
@@ -29,7 +29,7 @@ const Services = () => {
       features: [
         'Turn spaghetti code into clean architecture',
         'Microservices that actually make sense',
-        '10x database performance (we've done it)',
+        "10x database performance (we've done it)",
         'Find & fix bottlenecks in 48 hours',
         'Prepare your stack for enterprise clients'
       ]
@@ -46,7 +46,7 @@ const Services = () => {
         'REST, GraphQL, or whatever you need',
         'Stripe, Plaid, Twilio — done right',
         'Zapier-like automation for your product',
-        'Real-time webhooks that don't break',
+        "Real-time webhooks that don't break",
         'API docs your customers will love'
       ]
     },
@@ -60,10 +60,10 @@ const Services = () => {
       ),
       features: [
         '24/7 monitoring — we catch issues first',
-        'Security patches before they're exploited',
+        "Security patches before they're exploited",
         'Bug fixes shipped same-day',
         'New features rolled in continuously',
-        'Monthly reports (you'll actually read)'
+        "Monthly reports (you'll actually read)"
       ]
     }
   ]
